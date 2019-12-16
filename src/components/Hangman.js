@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+  import React, { Component } from "react";
 import { randomWord } from "./words";
 
-import step0 from "./images/0.jpg";
+  import step0 from "./images/0.jpg";
 import step1 from "./images/1.jpg";
 import step2 from "./images/2.jpg";
 import step3 from "./images/3.jpg";
@@ -27,11 +27,47 @@ class Hangman extends Component {
 
 	handleGuess(evt) {
 		let letter = evt.target.value;
+
+		// Undefined Target Error!
+		if ('raygun'.indexOf(letter) > -1)
+		{
+			alert("Boom! You've found an error - check it out in Raygun.");
+			this.generateError(letter);
+		}
+
+
 		this.setState(st => ({
 			guessed: st.guessed.add(letter),
 			mistake: st.mistake + (st.answer.includes(letter) ? 0 : 1)
 		}));
 	}
+
+	generateError(letter) {
+		switch(letter) {
+			case 'r':
+				throw new Error("Error with the letter " + letter);
+				break;
+			case 'a':
+				this.handleGuess();
+				break;
+			case 'y':
+				var foo = undefined;
+				foo();
+				break;
+			case 'g':
+				var someVal = null;
+				console.log(someVal.foo);
+				break;
+			case 'u':
+				var xhr = new XMLHttpRequest();
+				xhr.setRequestHeader('Some-Header', 'val');
+				break;
+			case 'n':
+				var x = document.getElementByID('foo');
+				break;
+		}
+	}
+
 
 	generateButtons() {
 		return "abcdefghijklmnopqrstuvwxyz".split("").map(letter => (
