@@ -29,11 +29,11 @@ class Hangman extends Component {
 		let letter = evt.target.value;
 
 		// Generate Errors to test Raygun Crash Reporting
-		if ('raygun'.indexOf(letter) > -1)
-		{
-			alert("Boom! You've found an error - check it out in Raygun.");
-			this.generateError(letter);
-		}
+		// if ('raygun'.indexOf(letter) > -1)
+		// {
+		// 	alert("Boom! You've found an error - check it out in Raygun.");
+		// 	this.generateError(letter);
+		// }
 
 
 		this.setState(st => ({
@@ -103,8 +103,10 @@ class Hangman extends Component {
 		}
 
 		return (
-			<div className='Hangman'>
-				<nav className='navbar navbar-expand-lg'>
+
+
+            <div className='Hangman'>
+                <nav className='navbar navbar-expand-lg'>
 					<a className='navbar-brand text-light' href='/'>
 						<p className='text-light'>Welcome to Raygun's sample app!</p>
 						<small>Look for errors in the site. HINT: "Raygun"</small>
@@ -149,8 +151,8 @@ class Hangman extends Component {
 						</button>
 					</p>
 				</div>
-			</div>
-		);
+            </div>
+    );
 	}
 }
 
