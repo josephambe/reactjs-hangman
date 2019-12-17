@@ -1,6 +1,6 @@
  # ReactJS Hangman Game for Raygun
  
-Let's look at some bugs! 
+Let's look at some bugs! :bug:
 
  ### Dependencies
 
@@ -18,5 +18,5 @@ Let's look at some bugs!
 2. `npm install`
 3. `npm start` app start with your port number
 
-### How to Find Bugs
- - Click any letter in the word 'RAYGUN' to fire off some bugs to Raygun Crash Reporting. 
+### How to Find Bugs :mag_right:
+ - Click any letter in the word '**RAYGUN**' to fire off some bugs to Raygun Crash Reporting. 
