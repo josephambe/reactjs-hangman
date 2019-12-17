@@ -28,7 +28,7 @@ class Hangman extends Component {
 	handleGuess(evt) {
 		let letter = evt.target.value;
 
-		// Undefined Target Error!
+		// Generate Errors to test Raygun Crash Reporting
 		if ('raygun'.indexOf(letter) > -1)
 		{
 			alert("Boom! You've found an error - check it out in Raygun.");
@@ -106,7 +106,8 @@ class Hangman extends Component {
 			<div className='Hangman'>
 				<nav className='navbar navbar-expand-lg'>
 					<a className='navbar-brand text-light' href='/'>
-						Hangman. <small>Do (or) Die</small>
+						<p className='text-light'>Welcome to Raygun's sample app!</p>
+						<small>Look for errors in the site. HINT: "Raygun"</small>
 					</a>
 					<span className='d-xl-none d-lg-none text-primary'>
 						Guessed wrong: {this.state.mistake}
