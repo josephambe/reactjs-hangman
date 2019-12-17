@@ -1,7 +1,7 @@
- # ReactJS Hangman Game 
+ # ReactJS Hangman Game for Raygun
  
- If you'd like to contribute, help me close issues.
-  
+Let's look at some bugs! 
+
  ### Dependencies
 
   - Node: [http://nodejs.org/](http://nodejs.org/)
@@ -17,3 +17,6 @@
 1. Clone the repository
 2. `npm install`
 3. `npm start` app start with your port number
+
+### How to Find Bugs
+ - Click any letter in the word 'RAYGUN' to fire off some bugs to Raygun Crash Reporting. 
