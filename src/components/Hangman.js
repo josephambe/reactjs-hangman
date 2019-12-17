@@ -108,7 +108,7 @@ class Hangman extends Component {
             <div className='Hangman'>
                 <nav className='navbar navbar-expand-lg'>
 					<a className='navbar-brand text-light' href='/'>
-						<p className='text-light'>Welcome to Raygun's sample app!</p>
+						<h1 className='text-light'>Welcome to Raygun's sample app!</h1>
 						<small>Look for errors in the site. HINT: "Raygun"</small>
 					</a>
 					<span className='d-xl-none d-lg-none text-primary'>
@@ -142,7 +142,7 @@ class Hangman extends Component {
 					{!gameOver ? this.guessedWord() : this.state.answer}{" "}
 				</p>
 
-				<p className='text-center text-warning mt-4'>{gameStat}</p>
+				<h1 className='text-center text-warning mt-4'>{gameStat}</h1>
 
 				<div>
 					<p className='text-center'>
@@ -151,6 +151,7 @@ class Hangman extends Component {
 						</button>
 					</p>
 				</div>
+                <img src='images/right-sandhill.png'/>
             </div>
     );
 	}
