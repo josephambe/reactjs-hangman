@@ -8,6 +8,7 @@ import step3 from "./images/3.jpg";
 import step4 from "./images/4.jpg";
 import step5 from "./images/5.jpg";
 import step6 from "./images/6.jpg";
+import righthill from "./images/right-sandhill.png";
 
 class Hangman extends Component {
 	static defaultProps = {
@@ -151,8 +152,9 @@ class Hangman extends Component {
 						</button>
 					</p>
 				</div>
-                <img src='images/right-sandhill.png'/>
+                <img className='Hangman-hills' src={righthill}/>
             </div>
+
     );
 	}
 }

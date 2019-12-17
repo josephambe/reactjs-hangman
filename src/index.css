@@ -9,19 +9,17 @@ body {
 	background: #001d34 linear-gradient(180deg, #010e14 0%, #07518b 50%, #3087cc 100%);
 	height:100vh;
 	text-align: center;
+	overflow: hidden;
+
 }
 
 /*custom css*/
-/*.Hangman img {*/
-	/*width: 200px;*/
-	/*height: 350px;*/
-/*}*/
+.Hangman-hills {
+	position: absolute;
+
+}
 
 .Hangman h1 {
-	/*font-size: 3rem;*/
-	/*font-weight: 400;*/
-	/*padding-top: 0;*/
-	/*color: #158cee;*/
 	font-family: 'Source Sans Pro', Lucida, Arial, sans-serif;
 	color: #ffffff;
 	font-size: 26px;
