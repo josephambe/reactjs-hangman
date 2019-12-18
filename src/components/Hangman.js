@@ -10,6 +10,8 @@ import step5 from "./images/5.jpg";
 import step6 from "./images/6.jpg";
 import righthill from "./images/right-sandhill.png";
 import middlehill from "./images/middle-sandhill.png";
+import leftMts from "./images/left-mountains.svg";
+import rightMts from "./images/right-mountain.svg";
 
 
 
@@ -32,12 +34,12 @@ class Hangman extends Component {
 	handleGuess(evt) {
 		let letter = evt.target.value;
 
-		// Generate Errors to test Raygun Crash Reporting
-		// if ('raygun'.indexOf(letter) > -1)
-		// {
-		// 	alert("Boom! You've found an error - check it out in Raygun.");
-		// 	this.generateError(letter);
-		// }
+		//Generate Errors to test Raygun Crash Reporting
+		if ('raygun'.indexOf(letter) > -1)
+		{
+			alert("Boom! You've found an error - check it out in Raygun.");
+			this.generateError(letter);
+		}
 
 
 		this.setState(st => ({
@@ -109,10 +111,10 @@ class Hangman extends Component {
 		return (
 
             <div className='Hangman'>
+
                 <h1 className='text-light'>Welcome to Raygun's sample app</h1>
                 <p className='text-center text-light'>Can you find the errors in this game? The clue is in the name!</p>
                 <nav className='navbar navbar-expand-lg'>
-
 					<span className='d-xl-none d-lg-none text-primary'>
 						Guessed wrong: {this.state.mistake}
 					</span>
@@ -139,7 +141,7 @@ class Hangman extends Component {
                 <p className='text-center'>
 					<img src={this.props.images[this.state.mistake]} alt={altText} />
 				</p>
-				<p className='text-center text-light'>Guess the Programming Language ?</p>
+				<p className='text-center text-light'>Guess the Programming Language</p>
 				<p className='Hangman-word text-center'>
 					{!gameOver ? this.guessedWord() : this.state.answer}{" "}
 				</p>
@@ -153,6 +155,9 @@ class Hangman extends Component {
 						</button>
 					</p>
 				</div>
+
+                <img className='Hangman-hills' src={rightMts}/>
+                <img className='Hangman-left-hill' src={leftMts}/>
                 <img className='Hangman-hills' src={righthill}/>
                 <img className='Hangman-left-hill' src={middlehill}/>
 
