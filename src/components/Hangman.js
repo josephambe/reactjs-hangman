@@ -115,9 +115,6 @@ class Hangman extends Component {
                 <h1 className='text-light'>Welcome to Raygun's sample app</h1>
                 <p className='text-center text-light'>Can you find the errors in this game? The clue is in the name!</p>
                 <nav className='navbar navbar-expand-lg'>
-					<span className='d-xl-none d-lg-none text-primary'>
-						Guessed wrong: {this.state.mistake}
-					</span>
 					<button
 						className='navbar-toggler sr-only'
 						type='button'
@@ -135,7 +132,6 @@ class Hangman extends Component {
 							<li className='nav-item'></li>
 							<li className='nav-item'></li>
 						</ul>
-						<span className='navbar-text text-primary'>Guessed wrong: {this.state.mistake}</span>
 					</div>
 				</nav>
                 <p className='text-center'>
