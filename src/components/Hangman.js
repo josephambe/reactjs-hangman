@@ -9,6 +9,9 @@ import step4 from "./images/4.jpg";
 import step5 from "./images/5.jpg";
 import step6 from "./images/6.jpg";
 import righthill from "./images/right-sandhill.png";
+import middlehill from "./images/middle-sandhill.png";
+
+
 
 class Hangman extends Component {
 	static defaultProps = {
@@ -105,13 +108,11 @@ class Hangman extends Component {
 
 		return (
 
-
             <div className='Hangman'>
+                <h1 className='text-light'>Welcome to Raygun's sample app</h1>
+                <p className='text-center text-light'>Can you find the errors in this game? The clue is in the name!</p>
                 <nav className='navbar navbar-expand-lg'>
-					<a className='navbar-brand text-light' href='/'>
-						<h1 className='text-light'>Welcome to Raygun's sample app!</h1>
-						<small>Look for errors in the site. HINT: "Raygun"</small>
-					</a>
+
 					<span className='d-xl-none d-lg-none text-primary'>
 						Guessed wrong: {this.state.mistake}
 					</span>
@@ -135,7 +136,7 @@ class Hangman extends Component {
 						<span className='navbar-text text-primary'>Guessed wrong: {this.state.mistake}</span>
 					</div>
 				</nav>
-				<p className='text-center'>
+                <p className='text-center'>
 					<img src={this.props.images[this.state.mistake]} alt={altText} />
 				</p>
 				<p className='text-center text-light'>Guess the Programming Language ?</p>
@@ -153,6 +154,8 @@ class Hangman extends Component {
 					</p>
 				</div>
                 <img className='Hangman-hills' src={righthill}/>
+                <img className='Hangman-left-hill' src={middlehill}/>
+
             </div>
 
     );

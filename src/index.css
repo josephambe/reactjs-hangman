@@ -16,7 +16,14 @@ body {
 /*custom css*/
 .Hangman-hills {
 	position: absolute;
+	bottom: 0px;
 
+}
+
+.Hangman-left-hill {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
 }
 
 .Hangman h1 {
@@ -46,19 +53,6 @@ body {
 	font-size: 1.5rem;
 }
 .Hangman button {
-	/*border: none;*/
-	/*font-family: inherit;*/
-	/*font-size: 2.5rem;*/
-	/*cursor: pointer;*/
-	/*width: 5rem;*/
-	/*margin: 18px 8px 10px 13px;*/
-	/*letter-spacing: 0px;*/
-	/*outline: none;*/
-	/*background: #07ffc9;*/
-	/*color: rgb(0, 0, 0);*/
-	/*border-radius: 10px;*/
-	/*padding-top: 15px;*/
-    @include noselect;
 	width: 5rem;
 	margin: 18px 8px 10px 13px;
 	padding: 15px 0px 15px;
