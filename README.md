@@ -10,7 +10,7 @@ Let's look at some bugs! :bug:
   
   #### Resulting image looks something like this:
 
-[![2019-10-24-201937-1920x1080-scrot.png](https://i.postimg.cc/XJ29Hbbg/2019-10-24-201937-1920x1080-scrot.png)](https://postimg.cc/34vyNzWy)
+![alt text](public/Hangman.png)
 
 ### Initial Set Up
 
